@@ -33,3 +33,27 @@ class toilets(models.Model):
     Rating = models.FloatField()
     Image = models.URLField()
     Price = models.FloatField()
+
+class malls(models.Model):
+    Name = models.CharField(max_length=255)
+    Description = models.TextField()
+    Location = models.TextField()
+    Rating = models.FloatField()
+    Image = models.URLField()
+    Price = models.FloatField()    
+
+class hospitals(models.Model):
+    Name = models.CharField(max_length=255)
+    Description = models.TextField()
+    Location = models.TextField()
+    Rating = models.FloatField()
+    Image = models.URLField()
+    Price = models.FloatField()
+
+class banks(models.Model):
+    Name = models.CharField(max_length=255)
+    Description = models.TextField()
+    Location = models.TextField()
+    Rating = models.FloatField()
+    Image = models.URLField()
+    Price = models.FloatField()

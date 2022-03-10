@@ -1,7 +1,7 @@
 from ast import Return
 from tkinter import Place
 from django.shortcuts import render
-from .models import places , restraunts , libraries , toilets
+from .models import banks, hospitals, malls, places , restraunts , libraries , toilets
 from django.http import JsonResponse
 import json
 
@@ -27,10 +27,6 @@ def login(request) :
 def register(request) :
     return render(request , 'register.html')
 
-def json(request) :
-    data = list(places.objects.values())
-    return JsonResponse(data , safe=False)
-
 def restraunt(request) :
     data = list(restraunts.objects.values())
     return JsonResponse(data , safe=False)
@@ -41,4 +37,16 @@ def librarie(request) :
 
 def toilet(request) :
     data = list(toilets.objects.values())
+    return JsonResponse(data , safe=False)
+
+def bank(request) :
+    data = list(banks.objects.values())
+    return JsonResponse(data , safe=False)
+
+def hospital(request) :
+    data = list(hospitals.objects.values())
+    return JsonResponse(data , safe=False)
+
+def mall(request) :
+    data = list(malls.objects.values())
     return JsonResponse(data , safe=False)
