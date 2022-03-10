@@ -12,4 +12,7 @@ urlpatterns = [
     path('login', include('home.urls')),
     path('register', include('home.urls')),
     path('json', include('home.urls')),
+    path('restraunts', include('home.urls')),
+    path('toilets', include('home.urls')),
+    path('libraries', include('home.urls')),
 ]

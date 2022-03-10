@@ -1,7 +1,7 @@
 from ast import Return
 from tkinter import Place
 from django.shortcuts import render
-from .models import places
+from .models import places , restraunts , libraries , toilets
 from django.http import JsonResponse
 import json
 
@@ -29,4 +29,16 @@ def register(request) :
 
 def json(request) :
     data = list(places.objects.values())
+    return JsonResponse(data , safe=False)
+
+def restraunt(request) :
+    data = list(restraunts.objects.values())
+    return JsonResponse(data , safe=False)
+
+def librarie(request) :
+    data = list(libraries.objects.values())
+    return JsonResponse(data , safe=False)
+
+def toilet(request) :
+    data = list(toilets.objects.values())
     return JsonResponse(data , safe=False)
