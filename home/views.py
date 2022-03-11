@@ -72,7 +72,8 @@ class signupview(View):
         fm = SignupForm(request.POST)
         if fm.is_valid():
             fm.save()
-            return redirect('register')
+            messages.success(request , "Registration Successful!")
+            return redirect('/register')
         else:
             return render(request, 'register.html', {'form': fm})
 
