@@ -6,28 +6,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Search</title>
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
 </head>
-
 <body>
-
-    <div id="cover">
-        <form method="get" action="/search_result">
-            <div class="tb">
-                <div class="td"><input type="text" placeholder="Search" name="query" id="query" required></div>
-                <div class="td" id="s-cover">
-                    <button type="submit">
-                <div id="s-circle"></div>
-                <span></span>
-              </button>
-                </div>
-            </div>
-        </form>
-    </div>
-
+    <div class="min-h-screen bg-gray-100 flex flex-col justify-center">
+        <div class="relative p-12 w-full sm:max-w-2xl sm:mx-auto">
+          <div class="overflow-hidden z-0 rounded-full relative p-3">
+            <form role="form" class="relative flex z-50 bg-white rounded-full" method="get" action="/search_result">
+              <input type="text" placeholder="enter your search here" class="rounded-full flex-1 px-6 py-4 text-gray-700 focus:outline-none" name="query" id="query">
+              <button class="bg-indigo-500 text-white rounded-full font-semibold px-8 py-4 hover:bg-indigo-400 focus:bg-indigo-600 focus:outline-none" type="submit">Search</button>
+            </form>
+            <div class="glow glow-1 z-10 bg-pink-400 absolute"></div>
+            <div class="glow glow-2 z-20 bg-purple-400 absolute"></div>
+            <div class="glow glow-3 z-30 bg-yellow-400 absolute"></div>
+            <div class="glow glow-4 z-40 bg-blue-400 absolute"></div>
+          </div>
+        </div>
+      </div>
 </body>
-
 </html>
