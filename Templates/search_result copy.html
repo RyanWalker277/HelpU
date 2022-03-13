@@ -2,104 +2,49 @@
 {% if places %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Search Results</title>
-        <link rel="stylesheet" href="{% static 'style copy.css' %}">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <style></style>
-    </head>
-    <body class="bg-gray-50">
-        <nav id="header" class="fixed w-full z-10 top-0">
-            <div id="progress"
-                 class="h-1 z-20 top-0"
-                 style=" background: linear-gradient( to right, #10b981 var(--scroll), transparent 0 ); ">
-            </div>
-            <div id="nav-content"
-                 class="w-full text-gray-700 bg-gray-50 md:bg-transparent">
-                <div x-data="{ open: false }" class="items-center">
-                    <div class="p-4 flex flex-row items-center justify-between">
-                        <a href="/"
-                           class="text-2xl md:text-3xl font-bold tracking-normal text-gray-900 rounded-lg focus:outline-none focus:shadow-outline">HelpU<span style="color: #FF7F50;">.</span></a>
-                        <button class="md:hidden rounded-lg focus:outline-none focus:shadow-none"
-                                @click="open = !open">
-                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                                <path x-show="!open"
-                                      fill-rule="evenodd"
-                                      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                      clip-rule="evenodd">
-                                </path>
-                                <path x-show="open"
-                                      fill-rule="evenodd"
-                                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                      clip-rule="evenodd">
-                                </path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <h1 class="font-sans font-bold text-2xl md:text-3xl leading-none mt-24 mb-4 text-center text-gray-700">
-            <span class="text-green-500">Search results for "{{query}}"</span>
-        </h1>
-        {% for places in places %}
-        <div class="mx-auto px-4 py-4 max-w-xl my-auto">
-            <div class="bg-gray-50 md:bg-white md:shadow-xl rounded-lg mb-6 ">
-                <a target="_blank"
-                   rel="noreferrer noopener"
-                   href="https://timesofindia.indiatimes.com/india/international-space-station-to-retire-in-2030-will-fall-into-pacific-ocean-a-year-later-nasa/articleshow/89392862.cms">
-                    <div class="md:flex-shrink-0">
-                        <img src="{{places.Image}}"
-                             alt="uploaded cover image"
-                             class="object-cover h-full w-full rounded-lg rounded-b-none">
-                    </div>
-                </a>
-                <div class="py-1">
-                    <div class="p-4">
-                        <h2 class="truncate font-bold mb-2 md:mt-4 text-2xl text-gray-800 tracking-normal mx-2">
-                              {{places.Name}}
-                        </h2>
-                        <p class="break-words text-sm text-gray-700 px-2 mr-1">
-                            {{places.Description}}
-                        </p>
-                    </div>
-                    <div class="flex items-center justify-between md:p-4 md:mx-4">
-                        <a target="_blank"
-                           rel="noreferrer noopener"
-                           href="https://timesofindia.indiatimes.com/india/international-space-station-to-retire-in-2030-will-fall-into-pacific-ocean-a-year-later-nasa/articleshow/89392862.cms">
-                            <div class="flex items-center">
-                                <div class="text-sm ml-2">
-                                    <p class="text-black leading-none">
-                                        Wheelchair booking
-                                    </p>
-                                    <p class="text-gray-700">
-                                        Ramps
-                                    </p>
-                                    <p class="text-gray-700">
-                                          Personaliased Helper
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a target="_blank"
-                           rel="noreferrer noopener"
-                           href="https://timesofindia.indiatimes.com/india/international-space-station-to-retire-in-2030-will-fall-into-pacific-ocean-a-year-later-nasa/articleshow/89392862.cms"
-                           class="bg-green-500 hover:bg-green-600 text-white rounded-full px-8 py-2">
-                            Read More
-                        </a>
-                    </div>
-                </div>
-            </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    {% for places in places %}
+    <div class="search-result new-job">
+        <div class="icon">
+          <img src="{{places.Image}}" width="60" />
         </div>
-        {% endfor %}
-    </body>
-    <script type="text/javascript">
-      let h=document.documentElement,b=document.body,st="scrollTop",sh="scrollHeight",progress=document.querySelector("#progress"),scroll;let scrollpos=window.scrollY;let header=document.getElementById("header");let navcontent=document.getElementById("nav-content");document.addEventListener("scroll",function(){scroll=(h[st]||b[st])/((h[sh]||b[sh])-h.clientHeight)*100;progress.style.setProperty("--scroll",scroll+"%");scrollpos=window.scrollY;if(scrollpos>10){header.classList.add("bg-white");header.classList.add("shadow-xl");navcontent.classList.remove("bg-gray-50");navcontent.classList.add("bg-white")}else{header.classList.remove("bg-white");header.classList.remove("shadow-xl");navcontent.classList.remove("bg-white");navcontent.classList.add("bg-gray-50")}});
-    </script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <div class="content">
+          <p>
+            <span class="company"><a href="/job/1234">{{places.Name}}</a></span>
+            -
+            <a href="/reviews/1234">
+              <span class="stars"><span class="stars-inner" style="width:74px"></span></span>
+              <span class="reviews">{{places.id}} reviews</span>
+            </a>
+          </p>
+          <div>
+            <p>{{ places.Description }}</p>
+          </div>
+          <div class="actions">
+            <span class="date">1 day ago</span>
+            <span class="save"><a href="/save">Wheelchair booking</a></span>
+            <span class="email"><a href="/email">Personaliased Helper</a></span>
+            <span class="more"><a href="/more">Ramps</a></span>
+          </div>
+          <div class="more">
+            <div class="close">x</div>
+            <li>View all <a href="/jobs/1234">HEB jobs in Austin, TX</a> - <a href="/jobs/austin">Austin jobs</a></li>
+            <li>Salary Search: <a href="/salary/1234">Staff Software Web Engineer salaries in Austin, TX</a></li>
+            <li>Related forums: <a href="/forum/1234">Austin, TX - HEB</a></li>
+          </div>
+        </div>
+      </div>
+      <br>
+      {% endfor %}
+</body>
 </html>
 {% else %}
 <html lang="en" class="reset">
