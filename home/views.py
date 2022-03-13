@@ -3,7 +3,7 @@ from email import message
 from pydoc import importfile
 from tkinter import Place
 from django.shortcuts import redirect, render
-from .models import banks, hospitals, malls, places, restraunts, libraries, toilets
+from .models import banks, hospitals, malls, restraunts, libraries, toilets
 from django.http import JsonResponse
 import json
 from django.views.generic import View
@@ -23,7 +23,7 @@ def search_result(request):
     if request.method == 'GET':
         query = request.GET.get('query')
         if query:
-            data = places.objects.filter(Name__icontains=query)
+            data = malls.objects.filter(Name__icontains=query)  
             return render(request, 'search_result.html', {'places': data, 'query': query})
         else:
             print("No information to show")
@@ -94,3 +94,6 @@ def login(request):
             return redirect("login")
     else:
         return render(request, 'login.html')
+
+def results(request):
+    return render(request, 'results.html')

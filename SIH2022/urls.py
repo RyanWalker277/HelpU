@@ -18,4 +18,5 @@ urlpatterns = [
     path('malls', include('home.urls')),
     path('hospitals', include('home.urls')),
     path('banks', include('home.urls')),
+    path('results', include('home.urls')),
 ]

@@ -16,4 +16,5 @@ urlpatterns = [
     path('malls', views.mall , name='restraunts' ),
     path('banks', views.bank , name='toilets' ),
     path('hospitals', views.hospital , name='libraries' ),
+    path('results', views.results , name='results' ),
 ]

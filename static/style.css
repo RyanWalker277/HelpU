@@ -1,0 +1,88 @@
+body {
+    background-color: #ccc;
+    font-family: 'Roboto', Helvetica Neue, sans-serif;
+}
+
+h2,
+p,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+div.more {
+    display: none;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    background-color: #eee;
+    position: relative;
+}
+
+.search-result {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    position: relative;
+}
+
+h2 {
+    color: rgb(40, 140, 252)
+}
+
+a {
+    text-decoration: none;
+    color: rgb(36, 138, 250)
+}
+
+.icon {
+    margin: 0 15px 0 0;
+}
+
+.reviews {
+    color: rgb(253, 137, 37);
+}
+
+.actions {
+    color: rgb(192, 199, 212);
+    margin-top: 10px;
+    font-size: 90%;
+}
+
+span {
+    margin-right: 10px;
+}
+
+div>div p {
+    color: rgb(192, 199, 212);
+    margin-top: 10px;
+}
+
+.company,
+.stars,
+.reviews {
+    font-size: 110%;
+    margin-right: 0 !important;
+    margin-top: 5px !important;
+}
+
+.stars {
+    position: relative;
+    display: inline-block;
+    height: 16px;
+    width: 86px;
+    background: url(https://www.indeed.com/cmp/_s/s/40b77a6/5stars_lg.png) 0px 33px;
+    background-size: 85px 32px;
+}
+
+.stars-inner {
+    display: inline-block;
+    height: 16px;
+    width: 86px;
+    background: url(https://www.indeed.com/cmp/_s/s/40b77a6/5stars_lg.png) 0 17px;
+    background-size: 85px 32px;
+}
