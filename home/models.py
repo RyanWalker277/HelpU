@@ -7,7 +7,7 @@ class places(models.Model):
     Description = models.TextField()
     Location = models.TextField()
     Rating = models.FloatField()
-    Image = models.URLField()
+    Image = models.URLField(max_length=500, blank=True, default='')
     Price = models.FloatField()
 
 class restraunts(models.Model):
@@ -15,7 +15,7 @@ class restraunts(models.Model):
     Description = models.TextField()
     Location = models.TextField()
     Rating = models.FloatField()
-    Image = models.URLField()
+    Image = models.URLField(max_length=500, blank=True, default='')
     Price = models.FloatField()
 
 class libraries(models.Model):
@@ -23,7 +23,7 @@ class libraries(models.Model):
     Description = models.TextField()
     Location = models.TextField()
     Rating = models.FloatField()
-    Image = models.URLField()
+    Image = models.URLField(max_length=500, blank=True, default='')
     Price = models.FloatField()
 
 class toilets(models.Model):
@@ -31,7 +31,7 @@ class toilets(models.Model):
     Description = models.TextField()
     Location = models.TextField()
     Rating = models.FloatField()
-    Image = models.URLField()
+    Image = models.URLField(max_length=500, blank=True, default='')
     Price = models.FloatField()
 
 class malls(models.Model):
@@ -39,7 +39,7 @@ class malls(models.Model):
     Description = models.TextField()
     Location = models.TextField()
     Rating = models.FloatField()
-    Image = models.URLField()
+    Image = models.URLField(max_length=500, blank=True, default='')
     Price = models.FloatField()    
 
 class hospitals(models.Model):
@@ -47,7 +47,7 @@ class hospitals(models.Model):
     Description = models.TextField()
     Location = models.TextField()
     Rating = models.FloatField()
-    Image = models.URLField()
+    Image = models.URLField(max_length=500, blank=True, default='')
     Price = models.FloatField()
 
 class banks(models.Model):
@@ -55,5 +55,5 @@ class banks(models.Model):
     Description = models.TextField()
     Location = models.TextField()
     Rating = models.FloatField()
-    Image = models.URLField()
+    Image = models.URLField(max_length=500, blank=True, default='')
     Price = models.FloatField()
