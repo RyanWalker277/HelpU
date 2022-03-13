@@ -17,56 +17,75 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
     </head>
     <body>
-        <!-- component -->
-        <div class="font-sans bg-white flex flex-col min-h-screen w-full">
-            <div>
-                <div class="px-4 py-4">
-                    <div class="w-full md:max-w-6xl md:mx-auto md:flex md:items-center md:justify-between">
-                        <div>
-                            <a href="/" class="inline-block py-2 text-gray-800 text-2xl font-bold">HelpU.</a>
-                        </div>
-                        <div>
-                            <div class="hidden md:block">
-                                <a href="#Features"
-                                   class="inline-block py-1 md:py-4 text-gray-600 mr-6 font-bold">Features</a>
-                                   <a href="#Search"
-                                   class="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-600 mr-6">Search</a>
-                                <a href="#team"
-                                   class="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-600 mr-6">Our Team</a>
-                                <a href="#app"
-                                   class="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-600 mr-6">App</a>
-                                <a href="#Contact"
-                                   class="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-600 mr-6">Contact Us</a>
+        <div class="min-h-screen min-w-full bg-gray-100 flex flex-col justify-center p-10">
+            <div class="relative w-full max-w-full lg:max-w-6xl xl:max-w-screen-2xl mx-auto">
+                <div class="absolute inset-0 -mr-3.5 bg-gradient-to-r from-red-100 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rotate-3 sm:rounded-3xl">
+                </div>
+                <div class="relative bg-white shadow-lg sm:rounded-3xl">
+                    <div class="flex items-center justify-start pt-6 pl-6">
+                        <span class="w-3 h-3 bg-red-400 rounded-full mr-2"></span>
+                        <span class="w-3 h-3 bg-yellow-400 rounded-full mr-2"></span>
+                        <span class="w-3 h-3 bg-green-400 rounded-full mr-2"></span>
+                    </div>
+                    <div class="px-20 py-6">
+                        <!-- nav -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center justify-center">
+                                <a href="/"><div class="flex items-center justify-center text-3xl font-bold text-true-gray-800">HelpU</div></a>
+                                <div class="hidden lg:flex items-center justify-center antialiased lg:ml-20 pt-1">
+                                    <a href="#Features"
+                                       class="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out">
+                                        Features
+                                    </a>
+                                    <a href="#Search"
+                                       class="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out">
+                                        Search
+                                    </a>
+                                    <a href="#team"
+                                       class="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out">
+                                        Our Team
+                                    </a>
+                                    <a href="#app"
+                                       class="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out">
+                                        App
+                                    </a>
+                                    <a href="#Contact"
+                                       class="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out">
+                                        Contact Us
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="hidden md:flex items-center justify-center">
+                                <a href="login"
+                                   class="mr-5 text-lg font-medium text-true-gray-800 hover:text-cool-gray-700 transition duration-150 ease-in-out">Login</a>
+                                <a href = "register">
+                                <button class="px-6 py-3 rounded-3xl font-medium bg-gradient-to-b from-gray-900 to-black text-white outline-none focus:outline-none hover:shadow-md hover:from-true-gray-900 transition duration-200 ease-in-out">
+                                    Sign Up
+                                </button>
+                            </a>
                             </div>
                         </div>
-                        <div class="hidden md:block">
-                            <a href="login"
-                               class="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-600 mr-6">Login</a>
-                            <a href="register"
-                               class="inline-block py-2 px-4 text-gray-700 bg-white hover:bg-gray-100 rounded-lg">Sign Up</a>
+                        <!-- /nav -->
+                        <!-- hero section -->
+                        <div class="lg:2/6 xl:w-2/4 mt-20 lg:mt-40 lg:ml-16 text-left">
+                            <div class="text-6xl font-semibold text-gray-900 leading-none">Bring all your work together</div>
+                            <div class="mt-6 text-xl font-light text-true-gray-500 antialiased">
+                                A better experience for yout attendees and less stress yout team.
+                            </div>
+                            <button class="mt-6 px-8 py-4 rounded-full font-normal tracking-wide bg-gradient-to-b from-blue-600 to-blue-700 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+                                Download for Free
+                            </button>
                         </div>
-                    </div>
-                </div>
-                
-                <!--Hero-->
-            <div class="w-full px-6">
-                <div class="mt-8 relative rounded-lg bg-indigo-700 container mx-auto flex flex-col items-center pt-12 sm:pt-24 pb-24 sm:pb-32 md:pb-48 lg:pb-56 xl:pb-64">
-                   <img class="mr-2 lg:mr-12 mt-2 lg:mt-12 absolute right-0 top-0"  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg2.svg" alt="bg"/>
-                   <img class="ml-2 lg:ml-12 mb-2 lg:mb-12 absolute bottom-0 left-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg3.svg" alt="bg"/>
-                   
-                    <div class="w-11/12 sm:w-2/3 mb-5 sm:mb-10">
-                        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold leading-tight">Empowering the ones who never give up</h1>
-                    </div>
-                </div>
-                <div class="container mx-auto flex justify-center md:-mt-56 -mt-20 sm:-mt-40">
-                    <div class="relative sm:w-2/3 w-11/12">
-                        <img src="https://media.istockphoto.com/vectors/group-diverse-of-people-with-disabilities-work-together-in-office-vector-id1298415912?b=1&k=20&m=1298415912&s=170667a&w=0&h=PekU--qj5XKGUWrq2c4VxmbupvhyvasMcOTmqJE_Gzc=" alt="Sample Page" role="img"  />
+                        <div class="mt-12 lg:mt-32 lg:ml-20 text-left">
+                        </div>
+                        <!-- /hero section -->
                     </div>
                 </div>
             </div>
-        
-                <!--hero end-->
-
+        </div>
+        <!-- component -->
+        <div class="font-sans bg-gray-100 flex flex-col min-h-screen w-full">
+            <div>
                 <div class="px-4 md:hidden">
                     <div class="-mt-10 max-w-4xl mx-auto bg-white shadow-lg relative z-20"
                          style="border-radius: 20px;">
@@ -234,8 +253,8 @@
                 <p class="text-center p-4 text-gray-600 mt-10">
                 </p>
                 <!--Features-->
-                <div id="Features">
-                    <section class="max-w-8xl mx-auto container bg-white pt-16">
+                <div id="Features" class="bg-gray-100">
+                    <section class="max-w-8xl mx-auto container pt-16">
                         <div>
                             <div role="contentinfo" class="flex items-center flex-col px-4">
                                 <p tabindex="0"
@@ -374,277 +393,280 @@
                 <!--Search End-->
                 <!--Team-->
                 <div id="team">
-                <section class="bg-white">
-                    <div class="container px-6 py-10 mx-auto">
-                        <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl">
-                            Our Team
-                        </h1>
-                        <p class="max-w-2xl mx-auto my-6 text-center text-gray-500">
-                            We are a team of Developers who creates unique solutions. Our main aim is to provide the best services to people.
-                        </p>
-                        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
-                            <div class="flex flex-col items-center">
-                                <img class="object-cover w-full rounded-xl aspect-square"
-                                     src="https://media-exp1.licdn.com/dms/image/C4E03AQFJLdhcdtabwA/profile-displayphoto-shrink_400_400/0/1607504146455?e=1652313600&v=beta&t=swJfjg6FwUfqnFkaIOITEXyJi3Tc4BSdHlye847HpD4"
-                                     alt="">
-                                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize">
-                                    Anvansh Singh
-                                </h1>
-                                <p class="mt-2 text-gray-500 capitalize ">
-                                    Web Developer
-                                </p>
-                                <div class="flex mt-3 -mx-2">
-                                    <a href="#" class="mx-2 text-gray-600" aria-label="Facebook">
-                                        <svg class="w-6 h-6 fill-current"
-                                             viewBox="0 0 24 24"
-                                             fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                    <a href="https://github.com/RyanWalker277"
-                                       class="mx-2 text-gray-600 "
-                                       aria-label="Github">
-                                        <svg class="w-6 h-6 fill-current"
-                                             viewBox="0 0 24 24"
-                                             fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
-                                            </path>
-                                        </svg>
-                                    </a>
+                    <section class="bg-gray-100">
+                        <div class="container px-6 py-10 mx-auto">
+                            <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl">
+                                Our Team
+                            </h1>
+                            <p class="max-w-2xl mx-auto my-6 text-center text-gray-500">
+                                We are a team of Developers who creates unique solutions. Our main aim is to provide the best services to people.
+                            </p>
+                            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
+                                <div class="flex flex-col items-center">
+                                    <img class="object-cover w-full rounded-xl aspect-square"
+                                         src="https://media-exp1.licdn.com/dms/image/C4E03AQFJLdhcdtabwA/profile-displayphoto-shrink_400_400/0/1607504146455?e=1652313600&v=beta&t=swJfjg6FwUfqnFkaIOITEXyJi3Tc4BSdHlye847HpD4"
+                                         alt="">
+                                    <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize">
+                                        Anvansh Singh
+                                    </h1>
+                                    <p class="mt-2 text-gray-500 capitalize ">
+                                        Web Developer
+                                    </p>
+                                    <div class="flex mt-3 -mx-2">
+                                        <a href="#" class="mx-2 text-gray-600" aria-label="Facebook">
+                                            <svg class="w-6 h-6 fill-current"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="https://github.com/RyanWalker277"
+                                           class="mx-2 text-gray-600 "
+                                           aria-label="Github">
+                                            <svg class="w-6 h-6 fill-current"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <img class="object-cover w-full rounded-xl aspect-square"
+                                         src="https://media-exp1.licdn.com/dms/image/C5603AQHQUuOhY3SjCQ/profile-displayphoto-shrink_400_400/0/1620131131595?e=1652313600&v=beta&t=6irhm8kZ5g9JiSJ6dAE7-mxqFO036FFcOMEwlaSFOC8"
+                                         alt="">
+                                    <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize">
+                                        Ananya Punia
+                                    </h1>
+                                    <p class="mt-2 text-gray-500 capitalize ">
+                                        Android Developer
+                                    </p>
+                                    <div class="flex mt-3 -mx-2">
+                                        <a href="#" class="mx-2 text-gray-600 " aria-label="Facebook">
+                                            <svg class="w-6 h-6 fill-current"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="https://github.com/ananyapunia28"
+                                           class="mx-2 text-gray-600 "
+                                           aria-label="Github">
+                                            <svg class="w-6 h-6 fill-current"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <img class="object-cover w-full rounded-xl aspect-square"
+                                         src="https://media-exp1.licdn.com/dms/image/C5603AQHZD_wk4eTg8g/profile-displayphoto-shrink_400_400/0/1634964492730?e=1652313600&v=beta&t=lHZVih6u8IbCcELq8vI_xvI6TW_4ofey1ZLtSn4kzyo"
+                                         alt="">
+                                    <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize ">
+                                        Arjit Goyal
+                                    </h1>
+                                    <p class="mt-2 text-gray-500 capitalize ">
+                                        Web Developer
+                                    </p>
+                                    <div class="flex mt-3 -mx-2">
+                                        <a href="#" class="mx-2 text-gray-600 " aria-label="Facebook">
+                                            <svg class="w-6 h-6 fill-current"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="https://github.com/arjit1704"
+                                           class="mx-2 text-gray-600 "
+                                           aria-label="Github">
+                                            <svg class="w-6 h-6 fill-current"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center">
-                                <img class="object-cover w-full rounded-xl aspect-square"
-                                     src="https://media-exp1.licdn.com/dms/image/C5603AQHQUuOhY3SjCQ/profile-displayphoto-shrink_400_400/0/1620131131595?e=1652313600&v=beta&t=6irhm8kZ5g9JiSJ6dAE7-mxqFO036FFcOMEwlaSFOC8"
-                                     alt="">
-                                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize">
-                                    Ananya Punia
-                                </h1>
-                                <p class="mt-2 text-gray-500 capitalize ">
-                                    Android Developer
-                                </p>
-                                <div class="flex mt-3 -mx-2">
-                                    <a href="#" class="mx-2 text-gray-600 " aria-label="Facebook">
-                                        <svg class="w-6 h-6 fill-current"
-                                             viewBox="0 0 24 24"
-                                             fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                    <a href="https://github.com/ananyapunia28" class="mx-2 text-gray-600 " aria-label="Github">
-                                        <svg class="w-6 h-6 fill-current"
-                                             viewBox="0 0 24 24"
-                                             fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
-                                            </path>
-                                        </svg>
-                                    </a>
+                            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
+                                <div class="flex flex-col items-center">
+                                    <img class="object-cover w-full rounded-xl aspect-square"
+                                         src="https://media-exp1.licdn.com/dms/image/C4E03AQGlp0Yq4HEQng/profile-displayphoto-shrink_400_400/0/1619374698864?e=1652313600&v=beta&t=IeAl2ay8QxjSBwmw3DUWtX1U59v3eJ_GQRtRJFywcr0"
+                                         alt="">
+                                    <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize">
+                                        Shivendu Mishra
+                                    </h1>
+                                    <p class="mt-2 text-gray-500 capitalize ">
+                                        Android Developer
+                                    </p>
+                                    <div class="flex mt-3 -mx-2">
+                                        <a href="#" class="mx-2 text-gray-600" aria-label="Facebook">
+                                            <svg class="w-6 h-6 fill-current"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="https://github.com/shivenducs1136"
+                                           class="mx-2 text-gray-600 "
+                                           aria-label="Github">
+                                            <svg class="w-6 h-6 fill-current"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="flex flex-col items-center">
-                                <img class="object-cover w-full rounded-xl aspect-square"
-                                     src="https://media-exp1.licdn.com/dms/image/C5603AQHZD_wk4eTg8g/profile-displayphoto-shrink_400_400/0/1634964492730?e=1652313600&v=beta&t=lHZVih6u8IbCcELq8vI_xvI6TW_4ofey1ZLtSn4kzyo"
-                                     alt="">
-                                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize ">
-                                    Arjit Goyal
-                                </h1>
-                                <p class="mt-2 text-gray-500 capitalize ">
-                                    Web Developer
-                                </p>
-                                <div class="flex mt-3 -mx-2">
-                                    <a href="#" class="mx-2 text-gray-600 " aria-label="Facebook">
-                                        <svg class="w-6 h-6 fill-current"
-                                             viewBox="0 0 24 24"
-                                             fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                    <a href="https://github.com/arjit1704"
-                                       class="mx-2 text-gray-600 "
-                                       aria-label="Github">
-                                        <svg class="w-6 h-6 fill-current"
-                                             viewBox="0 0 24 24"
-                                             fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
-                                            </path>
-                                        </svg>
-                                    </a>
+                                <div class="flex flex-col items-center">
+                                    <img class="object-cover w-full rounded-xl aspect-square"
+                                         src="{% static 'nikita.jpg' %}"
+                                         alt="">
+                                    <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize">
+                                        Nikita Sharma
+                                    </h1>
+                                    <p class="mt-2 text-gray-500 capitalize ">
+                                        Web Developer
+                                    </p>
+                                    <div class="flex mt-3 -mx-2">
+                                        <a href="#" class="mx-2 text-gray-600 " aria-label="Facebook">
+                                            <svg class="w-6 h-6 fill-current"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="https://github.com/Nikita-Sharma27"
+                                           class="mx-2 text-gray-600 "
+                                           aria-label="Github">
+                                            <svg class="w-6 h-6 fill-current"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <img class="object-cover w-full rounded-xl aspect-square"
+                                         src="https://media-exp1.licdn.com/dms/image/C4D03AQFPcPhP4AIaqg/profile-displayphoto-shrink_400_400/0/1646067092841?e=1652313600&v=beta&t=nhmkx3OUEKVkXpK_MHkfZ-zoL_sZEMFBf4G-GlejXiw"
+                                         alt="">
+                                    <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize ">
+                                        Utkarsh Arora
+                                    </h1>
+                                    <p class="mt-2 text-gray-500 capitalize ">
+                                        Android Developer
+                                    </p>
+                                    <div class="flex mt-3 -mx-2">
+                                        <a href="#" class="mx-2 text-gray-600 " aria-label="Facebook">
+                                            <svg class="w-6 h-6 fill-current"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="https://github.com/Utkarsh-Arora-007"
+                                           class="mx-2 text-gray-600 "
+                                           aria-label="Github">
+                                            <svg class="w-6 h-6 fill-current"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
-                            <div class="flex flex-col items-center">
-                                <img class="object-cover w-full rounded-xl aspect-square"
-                                     src="https://media-exp1.licdn.com/dms/image/C4E03AQGlp0Yq4HEQng/profile-displayphoto-shrink_400_400/0/1619374698864?e=1652313600&v=beta&t=IeAl2ay8QxjSBwmw3DUWtX1U59v3eJ_GQRtRJFywcr0"
-                                     alt="">
-                                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize">
-                                    Shivendu Mishra
-                                </h1>
-                                <p class="mt-2 text-gray-500 capitalize ">
-                                    Android Developer
-                                </p>
-                                <div class="flex mt-3 -mx-2">
-                                    <a href="#" class="mx-2 text-gray-600" aria-label="Facebook">
-                                        <svg class="w-6 h-6 fill-current"
-                                             viewBox="0 0 24 24"
-                                             fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                    <a href="https://github.com/shivenducs1136"
-                                       class="mx-2 text-gray-600 "
-                                       aria-label="Github">
-                                        <svg class="w-6 h-6 fill-current"
-                                             viewBox="0 0 24 24"
-                                             fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="flex flex-col items-center">
-                                <img class="object-cover w-full rounded-xl aspect-square"
-                                     src="{% static 'nikita.jpg' %}"
-                                     alt="">
-                                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize">
-                                    Nikita Sharma
-                                </h1>
-                                <p class="mt-2 text-gray-500 capitalize ">
-                                    Web Developer
-                                </p>
-                                <div class="flex mt-3 -mx-2">
-                                    <a href="#" class="mx-2 text-gray-600 " aria-label="Facebook">
-                                        <svg class="w-6 h-6 fill-current"
-                                             viewBox="0 0 24 24"
-                                             fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                    <a href="https://github.com/Nikita-Sharma27"
-                                       class="mx-2 text-gray-600 "
-                                       aria-label="Github">
-                                        <svg class="w-6 h-6 fill-current"
-                                             viewBox="0 0 24 24"
-                                             fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="flex flex-col items-center">
-                                <img class="object-cover w-full rounded-xl aspect-square"
-                                     src="https://media-exp1.licdn.com/dms/image/C4D03AQFPcPhP4AIaqg/profile-displayphoto-shrink_400_400/0/1646067092841?e=1652313600&v=beta&t=nhmkx3OUEKVkXpK_MHkfZ-zoL_sZEMFBf4G-GlejXiw"
-                                     alt="">
-                                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize ">
-                                    Utkarsh Arora
-                                </h1>
-                                <p class="mt-2 text-gray-500 capitalize ">
-                                    Android Developer
-                                </p>
-                                <div class="flex mt-3 -mx-2">
-                                    <a href="#" class="mx-2 text-gray-600 " aria-label="Facebook">
-                                        <svg class="w-6 h-6 fill-current"
-                                             viewBox="0 0 24 24"
-                                             fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                    <a href="https://github.com/Utkarsh-Arora-007"
-                                       class="mx-2 text-gray-600 "
-                                       aria-label="Github">
-                                        <svg class="w-6 h-6 fill-current"
-                                             viewBox="0 0 24 24"
-                                             fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+                    </section>
+                </div>
                 <!--Team-->
                 <!--Testimonial-->
                 <div id="Testimonial">
-                <div class="owl-carousel owl-theme grid place-items-center ">
-                    <div class="item">
-                        <div class="flex justify-center items-center w-screen">
-                            <div class="container mx-auto mt-10 mb-10 lg:mb-40 lg:px-20">
-                                <div class="relative w-full my-4 lg:w-9/12 mr-auto rounded-2xl shadow-2xl">
-                                    <img alt="Card"
-                                         src="https://cdn.pixabay.com/photo/2016/11/13/16/05/hospice-1821429_960_720.jpg"
-                                         class="max-w-full rounded-lg shadow-lg"/>
-                                </div>
-                                <div class="relative w-full lg:-mt-96 lg:w-3/6 p-8 ml-auto bg-blue-800 rounded-2xl z-50">
-                                    <div class="flex flex-col text-white">
-                                        <div>
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                 class="text-indigo-200 fill-current w-12 h-12 md:w-16 md:h-16"
-                                                 viewBox="0 0 24 24">
-                                                <path d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z"/>
-                                            </svg>
-                                        </div>
-                                        <p class="text-white my-5 px-2">
-                                            "Your present circumstances don't determine where you can go; they merely determine where you start."
-                                        </p>
-                                        <div class="flex justify-between pl-2">
-                                            <h3 class="font-bold text-2xl">
-                                                Nido Qubein
-                                            </h3>
-                                            <i class="fas fa-quote-right text-2xl" />
+                    <div class="owl-carousel owl-theme grid place-items-center ">
+                        <div class="item">
+                            <div class="flex justify-center items-center w-screen">
+                                <div class="container mx-auto mt-10 mb-10 lg:mb-40 lg:px-20">
+                                    <div class="relative w-full my-4 lg:w-9/12 mr-auto rounded-2xl shadow-2xl">
+                                        <img alt="Card"
+                                             src="https://cdn.pixabay.com/photo/2016/11/13/16/05/hospice-1821429_960_720.jpg"
+                                             class="max-w-full rounded-lg shadow-lg"/>
+                                    </div>
+                                    <div class="relative w-full lg:-mt-96 lg:w-3/6 p-8 ml-auto bg-blue-800 rounded-2xl z-50">
+                                        <div class="flex flex-col text-white">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                     class="text-indigo-200 fill-current w-12 h-12 md:w-16 md:h-16"
+                                                     viewBox="0 0 24 24">
+                                                    <path d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z"/>
+                                                </svg>
+                                            </div>
+                                            <p class="text-white my-5 px-2">
+                                                "Your present circumstances don't determine where you can go; they merely determine where you start."
+                                            </p>
+                                            <div class="flex justify-between pl-2">
+                                                <h3 class="font-bold text-2xl">
+                                                    Nido Qubein
+                                                </h3>
+                                                <i class="fas fa-quote-right text-2xl" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="flex justify-center items-center w-screen h-screen">
-                            <div class="container mx-auto mt-10 mb-10 lg:mb-40 lg:px-20">
-                                <div class="relative w-full my-4 lg:w-9/12 mr-auto rounded-2xl shadow-2xl">
-                                    <img alt="Card"
-                                         src="https://cdn.pixabay.com/photo/2015/08/26/11/06/wheelchair-908343_960_720.jpg"
-                                         class="max-w-full rounded-lg shadow-lg"/>
-                                </div>
-                                <div class="relative w-full lg:-mt-96 lg:w-3/6 p-8 ml-auto bg-blue-800 rounded-2xl z-50">
-                                    <div class="flex flex-col text-white">
-                                        <div>
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                 class="text-indigo-200 fill-current w-12 h-12 md:w-16 md:h-16"
-                                                 viewBox="0 0 24 24">
-                                                <path d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z"/>
-                                            </svg>
-                                        </div>
-                                        <p class="text-white my-5 px-2">
-                                            "Your goals are the road maps that guide you and show you what is possible for your life."
-                                        </p>
-                                        <div class="flex justify-between pl-2">
-                                            <h3 class="font-bold text-2xl">
-                                                Les Brown
-                                            </h3>
-                                            <i class="fas fa-quote-right text-2xl" />
+                        <div class="item">
+                            <div class="flex justify-center items-center w-screen h-screen">
+                                <div class="container mx-auto mt-10 mb-10 lg:mb-40 lg:px-20">
+                                    <div class="relative w-full my-4 lg:w-9/12 mr-auto rounded-2xl shadow-2xl">
+                                        <img alt="Card"
+                                             src="https://cdn.pixabay.com/photo/2015/08/26/11/06/wheelchair-908343_960_720.jpg"
+                                             class="max-w-full rounded-lg shadow-lg"/>
+                                    </div>
+                                    <div class="relative w-full lg:-mt-96 lg:w-3/6 p-8 ml-auto bg-blue-800 rounded-2xl z-50">
+                                        <div class="flex flex-col text-white">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                     class="text-indigo-200 fill-current w-12 h-12 md:w-16 md:h-16"
+                                                     viewBox="0 0 24 24">
+                                                    <path d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z"/>
+                                                </svg>
+                                            </div>
+                                            <p class="text-white my-5 px-2">
+                                                "Your goals are the road maps that guide you and show you what is possible for your life."
+                                            </p>
+                                            <div class="flex justify-between pl-2">
+                                                <h3 class="font-bold text-2xl">
+                                                    Les Brown
+                                                </h3>
+                                                <i class="fas fa-quote-right text-2xl" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -652,154 +674,151 @@
                         </div>
                     </div>
                 </div>
-            </div>
                 <!--Testimonial End-->
                 <!-- Contact -->
-                <div id="Contact">
-                <section class="text-gray-600 body-font relative">
-                    <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-                        <div class="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-                            <iframe width="100%"
-                                    height="100%"
-                                    class="absolute inset-0"
-                                    frameborder="0"
-                                    title="map"
-                                    marginheight="0"
-                                    marginwidth="0"
-                                    scrolling="no"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.900499429062!2d77.49697251508529!3d28.752387582370737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf471f7307f87%3A0xa4a1095abb33f9ac!2sTBI%20KIET!5e0!3m2!1sen!2sin!4v1646922118347!5m2!1sen!2sin"></iframe>
-                            <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-                                <div class="lg:w-1/2 px-6">
-                                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                                        ADDRESS
-                                    </h2>
-                                    <p class="mt-1">
-                                        Main Building(KIET, Phase - I, Ghaziabad, Uttar Pradesh 201015
-                                    </p>
+                <div id="Contact" class="bg-gray-100">
+                    <section class="text-gray-600 body-font relative">
+                        <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+                            <div class="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                                <iframe width="100%"
+                                        height="100%"
+                                        class="absolute inset-0"
+                                        frameborder="0"
+                                        title="map"
+                                        marginheight="0"
+                                        marginwidth="0"
+                                        scrolling="no"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.900499429062!2d77.49697251508529!3d28.752387582370737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf471f7307f87%3A0xa4a1095abb33f9ac!2sTBI%20KIET!5e0!3m2!1sen!2sin!4v1646922118347!5m2!1sen!2sin"></iframe>
+                                <div class="relative bg-white flex flex-wrap py-6 rounded shadow-md">
+                                    <div class="lg:w-1/2 px-6">
+                                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">
+                                            ADDRESS
+                                        </h2>
+                                        <p class="mt-1">
+                                            Main Building(KIET, Phase - I, Ghaziabad, Uttar Pradesh 201015
+                                        </p>
+                                    </div>
+                                    <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">
+                                            EMAIL
+                                        </h2>
+                                        <a class="text-indigo-500 leading-relaxed">tbikiet@gmail.com</a>
+                                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
+                                            PHONE
+                                        </h2>
+                                        <p class="leading-relaxed">
+                                            +91 9873816176
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
-                                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                                        EMAIL
-                                    </h2>
-                                    <a class="text-indigo-500 leading-relaxed">tbikiet@gmail.com</a>
-                                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                                        PHONE
-                                    </h2>
-                                    <p class="leading-relaxed">
-                                        +91 9873816176
-                                    </p>
+                            </div>
+                            <div class="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
+                                    Feedback
+                                </h2>
+                                <p class="leading-relaxed mb-5 text-gray-600">
+                                    We would love to hear about your experience at HelpU.
+                                </p>
+                                <div class="relative mb-4">
+                                    <label for="name" class="leading-7 text-sm text-gray-600">
+                                        Name
+                                    </label>
+                                    <input type="text"
+                                           id="name"
+                                           name="name"
+                                           class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                                 </div>
+                                <div class="relative mb-4">
+                                    <label for="email" class="leading-7 text-sm text-gray-600">
+                                        Email
+                                    </label>
+                                    <input type="email"
+                                           id="email"
+                                           name="email"
+                                           class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                           style="background-image: url("
+                                           data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiYmZkZTQxOS00ZGRkLWU5NDYtOWQ2MC05OGExNGJiMTA3N2YiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDAyNDkwMkRDOTIyMTFFNkI0MzFGRTk2RjM1OTdENTciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDAyNDkwMkNDOTIyMTFFNkI0MzFGRTk2RjM1OTdENTciIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTU2NTE1NDItMmIzOC1kZjRkLTk0N2UtN2NjOTlmMjQ5ZGFjIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmJiZmRlNDE5LTRkZGQtZTk0Ni05ZDYwLTk4YTE0YmIxMDc3ZiIv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") !important; background-repeat: no-repeat; background-size: 20px; background-position: 97% center; cursor: auto;"
+                                           data-temp-mail-org="0">
+                                </div>
+                                <div class="relative mb-4">
+                                    <label for="message" class="leading-7 text-sm text-gray-600">
+                                        Message
+                                    </label>
+                                    <textarea id="message"
+                                              name="message"
+                                              class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                                </div>
+                                <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                                    Submit
+                                </button>
                             </div>
                         </div>
-                        <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-                            <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
-                                Feedback
-                            </h2>
-                            <p class="leading-relaxed mb-5 text-gray-600">
-                                We would love to hear about your experience at HelpU.
-                            </p>
-                            <div class="relative mb-4">
-                                <label for="name" class="leading-7 text-sm text-gray-600">
-                                    Name
-                                </label>
-                                <input type="text"
-                                       id="name"
-                                       name="name"
-                                       class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                            </div>
-                            <div class="relative mb-4">
-                                <label for="email" class="leading-7 text-sm text-gray-600">
-                                    Email
-                                </label>
-                                <input type="email"
-                                       id="email"
-                                       name="email"
-                                       class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                       style="background-image: url("
-                                       data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiYmZkZTQxOS00ZGRkLWU5NDYtOWQ2MC05OGExNGJiMTA3N2YiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDAyNDkwMkRDOTIyMTFFNkI0MzFGRTk2RjM1OTdENTciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDAyNDkwMkNDOTIyMTFFNkI0MzFGRTk2RjM1OTdENTciIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTU2NTE1NDItMmIzOC1kZjRkLTk0N2UtN2NjOTlmMjQ5ZGFjIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmJiZmRlNDE5LTRkZGQtZTk0Ni05ZDYwLTk4YTE0YmIxMDc3ZiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Po+RVEoAAApzSURBVHja3Fp5bBTnFf/N7L32rm98gI0NmNAQjoAR4WihCCdNHFBDonCmJQWhtiRS01JoSlCqCqhoFeUoTUpTOSptuKSK0HIYHI5wCWwMxmAo8QXYDvg+du31ntP3zc7Osd61zR9V4o412m/mm/3mHb/3e+99a87j8UA68uh8i84F+GYfp+jcSucVdsFJCiyjcy+G17Gczn1MgcdpUInheUxkCpygQf4wVaCYKSBgGB88nc5hLL+TKTCcPSDoNVdCZF04jtPMh66HcrBno607oGT0nYG+G5JBP9giQ70vvoz+OHBDWkMzF2YPtsZQjaSPtrBBpwOv139t2GD5iSkR7v0hKaDjg8Kfrv4StR2tsBhNiqU4aaAeQ3tfUEwpzwuiMIJ4LYRNC9LYT0IGAn7My8hBVoydxoGoMI6uAD2oN+ixu6wEP9xTCBgN0NHJ7oOnl/NQxuyTk5SRr5V5eRztUzZKaA1avK0JeROeROmiNdDRfa/f/2gQ0kmfp2u+pFkdxqemw4+AuLgQJpxaYHHMSxKJygiSYKpnID0TsqbkAnapo/XrnJ1AfBKW5kwU5wMBgrLB0A9Sai/owwMx5Cqb2QyD0RgMTFFAyY18cMxzPAI8FHjwKkXEZ3lZeOWeSng+GO5McDdB5X5nC8YmjsBf5y7C/NQsEVc8GfBGexOsegPG2hLg9XklhbnoHhA0rKLAg/0xQfT0wl6/D/WOdlhMJoy0xYkKBST4cRrPSKkSWugI0pyeYu2BywmXuxcrJ0zHrtnPIUanl6H1zq3L2Hi5CLlJaSh9djVi9Ub4fL7Bg1gTsCpFmAwuvxfMg+vz5qC2qx3Ham4jLS4BNpMZPiEQfBYqQdUBz6m8RxCr7WpFnDUWH85+CavHTpJfXd/rwLpLR1F09xZ4kwVNbheaXb2w2U2DxwCn4uKg8EG/MEiw8f3uLrybvxg/y5srzmw+fwLbS79Am6cP2XHxpIQQDPR+Vudkq3d6+9De04WF2d/Cn596luARL7//07uVeOPK52jp7cao5DQ4vR7YyfIGno9aC/VjIRlKGi8o2ln0BvnxbXOfxvEXX0UmQamqtQle8gLDtcIynAwtnY5HrbNDVGDrzGdQnL9cFt5F0Fhz+ShWnfsnugNeZFM8yIHOc8p6gyoQ5goOWrobRVbe9EUR/lByVn706axxuLZiPV6ZNAMNXW1ocvWIwoYsz5MAbuL3OqLIyUmpOP/camyePEf+/umme5hyrBCFd0qRGpeENKtNhKPac6HoDM/QfDQIaXDMKQnKajDCTFl646lDWPTZbgrmLvFROyW73fkvovCZl2GiQKzpbBW/xjJ6IwXqw55urJ8yB1eeX4NZKSPlV2ypOIcFJ/eiqqcDoxPTYeR0YkKDmgi4IeYBjXacJiDkCx9Rno3Yx2pOw+Gqm7jS8hXenV+AZbnBIHyVktC8kdn4ydnDOHH3NmNzZCSl44/zX8CS0RPk5asdHSJkzjZWI9GeALvBLFkdETI792i1kIZSubD4ECmTWYhHbkoaGnscWH54D05NnYWd8wpgpCAdQ5x9vOAVbC0/JzLVjpn5SDFb5WU+ri7HG1dPoocCPzMxVVzXh4CUMyBRNjQxFK3C7V9Oh3tBjgFBU9eEvJERa0dfwIqPyy/iUnMDPpr3POakZYnzb039tubFbUSHr5Uex76aCliJPrPjk0lwIWgqThFazj9qJlNZUp2J+QEhFEmRkC7S4Se3G8jq45LTcbO9GXMPfYLt18718+Zhgsq0I4XYV30dGXHJSCaP+CKV0+HQVddNEeTkMVgmi1JxqhdmYjAIjIlLRBIlns0XjuF7RXtQ5+iE0+fBprJTWFS8l4LZQfSYSjTLBWEIxeIyWUBLv8zbrOyI1mMMueAXQjTECzKE2A1BrHmCVywIGRvFElUeb6jGwqJ/wE4ZuryjCSOoPGYMFqLHkEGEaNVpv4oAg5fT/WIgyiKy2blglhAETnZMKMBziFk6PG40E+4zY+PETO6HEE5tEd6jULYIlQA3YIs6sAfCDCGor7j+TCXI8gkUG1TRksXF6hXB8nogOow0JYR3PUNqaKSjL1T1MSsLIXpDfwvKWVKJF0FyV1DpsD453MoRy5hQVcvaECq3yXdeVXc2oAIsC7KbdkpW/vZW3KeanOOlQJLre17bmYV6AekZQccp/M1D6dx0yj2l2RmgY2PruXuQYEtGosk0NAWYi9i5YfZ30UolbKOzGzEmo9IyQrV4iD14pW/QBCZULai6rgnzgkaRkN9YcqOA9wd8eH3MdCQYLfB5ff2RR61aN2vAwpUwUjf2TTq8Xm9/yAEOfqBNo//NXlqUsdgECxHv+bzeaHEO3ZYtW96kTw3AWCN95mIZXli7EWUVt/GXTz/Dpas30NLeiV9u/QD7/1WMC6UVMJsMeHP7TuRkjURGagp++usdqKt/gPrGJvzit+9h198PItDbh5wnxmFJxTGMMdmQSaXy72uu4pP6SixOHSNKVVByCA5KeHkJabjd3YptNSWI15uwrboEeXEplFvM8hZL2O6gJ+LWIvu022KQm52Jg0VnEGeLxYI5eTAbDbDHWqGnEjl9RBIaH7bgwP5/w+3xYsHcGfjo/UKsXf8D1FgsqLhVhR8tW4wNb7+HZnhweooPDZVn8LfJC7Hp2hFMTAkKX9b5EEfvXUe7rw8/Hj0ZLsL8keY6fCdxFH3ew4bsaVGbmailBMPbtEkTcGDX75CanIili/Px83UrwJPgPWRRMwW1nmp+i9mEaTOnkZf+Q574EzIfH4/0lCQkxtuROTKN4sggJgcXNTNrR02Ejuwz/fxeTE3NwXSyLDverirBytyZYg4501KP3Jh4pJljYaX1M0wxiJWa/BC5PFI57fN50e3sQUtbp3hdXnkHReSRdWuWITHBDlefGz6/Hy8VLBCFrb3XiBo6Hxubhco7tYixmLFzx6/w1JL5WH3jc/yGBG1wO2Gi4u9QUy3qqC8uar2HfLJ2rbMdH9y/jncmzIWHFPYQA3X7PegVBCVLRvAEP5ACDHZJ8XGwxVjEa+aNlIw0XLt5BxfLKuD3B+By9WHdqu9jx+bXERtjhZcSIIPUk0+Mx8kDH2LVysViB9fe48QMewpey55C5ZSAZKLF9++W4+XUcdg/vQAXZi1FY59TVOwxawJSDBZYdAasuHIIB7+qIgOZIv4OoKFRtYtCTNTa3gWTUQ9bbIwIn06HAwE/2zGjeyRwW2cXskelUw+sQ8ODZjEVWMjyXuLsEaSwnzzEtge7/F4k6I00z4n7Sqz576bAzSK46KRN5CZqPd00Z6cAtpKXWr1u1FKrmWm1I8McQ+9VsjEf3KVwRFRAHemhfOB2u2GKkg0ZQ7ANp/DcIXI3y+z0MrZZ7CelWP9g1BkUONC82xfcNjSy2ikQhEqAFObZ7oe46xug0sZDcFE2hgdUQIMxloEF5QcH9S7xYD98aDyqqna5cNaLUM8JMr61vUMYQhz6wRKY3DRF2N4OV3jAHzPC95xU11yU4lRA2NZOFBrlMHwP7v/iZ9biYSx/8bD/VwPmgVsI/uPEcDuYzLe44f7vNv8VYAB02UEWdC0FyQAAAABJRU5ErkJggg==") !important; background-repeat: no-repeat; background-size: 20px; background-position: 97% center; cursor: auto;"
-                                       data-temp-mail-org="0">
-                            </div>
-                            <div class="relative mb-4">
-                                <label for="message" class="leading-7 text-sm text-gray-600">
-                                    Message
-                                </label>
-                                <textarea id="message"
-                                          name="message"
-                                          class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                            </div>
-                            <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                                Submit
-                            </button>
-                        </div>
-                    </div>
-                </section>
-            </div>
+                    </section>
+                </div>
                 <!--App-->
-                <div id="app">
-                <div class="p-4 w-full text-center bg-white rounded-lg border shadow-md sm:p-8">
-                    <h3 class="mb-2 text-3xl font-bold text-gray-900 ">
-                        HelpU - Your Helping-hand.
-                    </h3>
-                    <p class="mb-5 text-base text-gray-500 sm:text-lg ">
-                        Stay up to date and move work forward with HelpU on iOS & Android. Download the app today.
-                    </p>
-                    <div class="justify-center items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-                        <a href="#"
-                           class="w-full sm:w-auto flex bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5">
-                            <svg class="mr-3 w-7 h-7"
-                                 aria-hidden="true"
-                                 focusable="false"
-                                 data-prefix="fab"
-                                 data-icon="apple"
-                                 role="img"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 384 512">
-                                <path fill="currentColor"
-                                      d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z">
-                                </path>
-                            </svg>
-                            <div class="text-left">
-                                <div class="mb-1 text-xs">
-                                    Download on the
+                <div id="app" class="bg-gray-100">
+                    <div class="p-4 w-full text-center bg-gray-100 rounded-lg border shadow-md sm:p-8">
+                        <h3 class="mb-2 text-3xl font-bold text-gray-900 ">
+                            HelpU - Your Helping-hand.
+                        </h3>
+                        <p class="mb-5 text-base text-gray-500 sm:text-lg ">
+                            Stay up to date and move work forward with HelpU on iOS & Android. Download the app today.
+                        </p>
+                        <div class="justify-center items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+                            <a href="#"
+                               class="w-full sm:w-auto flex bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5">
+                                <svg class="mr-3 w-7 h-7"
+                                     aria-hidden="true"
+                                     focusable="false"
+                                     data-prefix="fab"
+                                     data-icon="apple"
+                                     role="img"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 384 512">
+                                    <path fill="currentColor"
+                                          d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z">
+                                    </path>
+                                </svg>
+                                <div class="text-left">
+                                    <div class="mb-1 text-xs">
+                                        Download on the
+                                    </div>
+                                    <div class="-mt-1 font-sans text-sm font-semibold">
+                                        Mac App Store
+                                    </div>
                                 </div>
-                                <div class="-mt-1 font-sans text-sm font-semibold">
-                                    Mac App Store
+                            </a>
+                            <a href="#"
+                               class="w-full sm:w-auto flex bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 ">
+                                <svg class="mr-3 w-7 h-7"
+                                     aria-hidden="true"
+                                     focusable="false"
+                                     data-prefix="fab"
+                                     data-icon="google-play"
+                                     role="img"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                          d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z">
+                                    </path>
+                                </svg>
+                                <div class="text-left">
+                                    <div class="mb-1 text-xs">
+                                        Get in on
+                                    </div>
+                                    <div class="-mt-1 font-sans text-sm font-semibold">
+                                        Google Play
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#"
-                           class="w-full sm:w-auto flex bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 ">
-                            <svg class="mr-3 w-7 h-7"
-                                 aria-hidden="true"
-                                 focusable="false"
-                                 data-prefix="fab"
-                                 data-icon="google-play"
-                                 role="img"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                      d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z">
-                                </path>
-                            </svg>
-                            <div class="text-left">
-                                <div class="mb-1 text-xs">
-                                    Get in on
-                                </div>
-                                <div class="-mt-1 font-sans text-sm font-semibold">
-                                    Google Play
-                                </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
                 <!--App end-->
                 <!--Footer-->
-                <footer class="p-4 bg-white shadow md:px-6 md:py-8 ">
+                <footer class="p-4 bg-gray-100 shadow md:px-6 md:py-8 ">
                     <div class="sm:flex sm:items-center sm:justify-between">
-                        <a href="/"
-                           target="_blank"
-                           class="flex items-center mb-4 sm:mb-0">
+                        <a href="/" target="_blank" class="flex items-center mb-4 sm:mb-0">
                             <img src="{% static 'HelpU.svg' %}"
                                  class="mr-4 h-10 w-10"
                                  alt="HelpU Logo"/>
