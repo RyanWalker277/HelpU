@@ -103,13 +103,10 @@ Superuser created successfully
 
 **Server:** Django , Python
 
-**User Authentication:** Django-allauth
-
 ## Features
 
-- College application tracking
-- Notification about upcoming competetive examinations
-- Informative blogs about career planning
+- Search feature to search for places with facilities for disabled people
+- API to return model data of places in JSON format
 ## Contributing
 
 Contributions are always welcome!
