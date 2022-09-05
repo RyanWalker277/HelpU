@@ -1,7 +1,7 @@
 
 # HelpU
 
-Empowering the ones who never give up!
+Empowering the ones who never give up! HelpU is a portal where disabled people can check whether the place are visiting are has specefic facilities for them or not
 
 
 
