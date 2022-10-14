@@ -117,6 +117,13 @@ Contributions are always welcome!
 
 See `contributing.md` for ways to get started.
 
+## Support++
+
+This project needs your shiny star ⭐.   
+Don't forget to leave a star ⭐️
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)  [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
 
 ##
 Made with ❤ by Anvansh ([@RyanWalker277](https://github.com/RyanWalker277))
